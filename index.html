@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink N Link Press</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</html>
+
+<!-- NAVIGATION BAR SECTION -->
+<div class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="image/logo.png" alt="Logo" class="logo-image"> Ink N Link Press
+        </a>
+    </div>
+    <ul class="menu">
+        <li>
+            <a href="#"><b>About Us</b></a>
+            <div class="dropdown">
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+                <a href="#">Objectives</a>
+                <a href="#">Motto</a>
+                <a href="#">Organizational Chart</a>
+                <a href="#">Location</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><b>Services</b></a>
+            <div class="dropdown">
+                <a href="#">Our Team</a>
+                <a href="#">Our Mission</a>
+                <a href="#">Careers</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><b>Products</b></a>
+            <div class="dropdown">
+                <a href="#">All Products</a>
+                <a href="#">New Releases</a>
+                <a href="#">Genre</a>
+                <a href="#">Author</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><b>Career</b></a>
+            <div class="dropdown">
+                <a href="#">Web Design</a>
+                <a href="#">SEO</a>
+                <a href="#">Marketing</a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><b>Frequently Questions</b></a>
+            <div class="dropdown">
+                <a href="#">Email</a>
+                <a href="#">Phone</a>
+                <a href="#">Location</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- MARQUEE SECTION -->
+<div class="marquee">
+    <p><br><br>Welcome To Ink N Link Press Website</p>
+  </div>
+  
+<!-- SEARCH AND LOGIN SECTION -->
+<body>
+    <header>
+      <div class="nav-right">
+        <form action="#" method="get" class="search-bar">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit">Search</button>
+        </form>
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
+        <div class="cart">
+          <a href="#">
+            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png" alt="Cart">
+          </a>
+        </div>
+      </div>
+    </header>
+
+<!-- SLIDESHOW SECTION -->
+<div class="slideshow-container">
+    <div class="slides">
+        <img src="image/book 2.jpg" alt="Slide 2">
+    </div>
+    <div class="slides">
+        <img src="image/book 3.jpg" alt="Slide 3">
+    </div>
+    <div class="slides">
+        <img src="image/book 4.jpg" alt="Slide 4">
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+<div class="dots-container">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+        showSlide(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+        const slides = document.getElementsByClassName("slides");
+        const dots = document.getElementsByClassName("dot");
+        if (n >= slides.length) { slideIndex = 0; }
+        if (n < 0) { slideIndex = slides.length - 1; }
+        for (let slide of slides) {
+            slide.style.display = "none";
+        }
+        for (let dot of dots) {
+            dot.className = dot.className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+    }
+</script>
+
+<!-- POP UP SECTION-->
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+  <h2>Welcome, New Member!</h2>
+  <p>Enjoy free shipping on your first purchase!</p>
+  <button onclick="closePopup()">Got It!</button>
+</div>
+
+<script>
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+</script>
+ 
+<!-- IMAGE SECTION-->    
+<div class="gallery">
+  <img src="image/book 4.jpg" alt="Image 1" onclick="openLightbox(this)">
+  <img src="image/book 3.jpg" alt="Image 2" onclick="openLightbox(this)">
+  <img src="image/book 2.jpg" alt="Image 3" onclick="openLightbox(this)">
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Full Image">
+</div>
+
+<script>
+  function openLightbox(image) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightbox.style.display = "flex";
+    lightboxImg.src = image.src;
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    lightbox.style.display = "none";
+  }
+</script>
+
+ <!-- FOOTER SECTION -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <footer>
+         <div class="footer-container">
+             <div class="footer-section">
+                 <h3>Contact Us</h3>
+                 <p>Email: inknlinkpress@gmail.com</p>
+                 <p>Phone: 012 456 7890</p>
+             </div>
+             <div class="footer-section">
+                 <h3>Location</h3>
+                 <p>Taman Perindustrian Bukit</p> 
+                 <p>Raja Selatan, 40000 </p>
+                 <p>Shah Alam</p>
+             </div>
+             <div class="footer-section">
+                 <h3>Business Hours</h3>
+                 <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                 <p>Sat: 10:00 AM - 4:00 PM</p>
+                 <p>Sun: Closed</p>
+             </div>
+             <div class="footer-section social-icons">
+                 <h3>Follow Us</h3>
+                 <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                 <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+                 <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+             </div>
+         </div>
+         <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
+     </footer>
+ </body>
+ </html>
