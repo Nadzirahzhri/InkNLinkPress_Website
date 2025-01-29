@@ -11,18 +11,21 @@ body {
   }
 
   .logo img {
-      width: 50px; /* Adjust the size of the logo */
+      width: 40px; /* Adjust the size of the logo (make it a bit smaller) */
       height: auto; /* Maintain aspect ratio */
-      margin-right: 10px; /* Space between logo and text */
+      margin-right: 12px; /* Space between logo and text */
+      vertical-align: middle; /* Ensures logo aligns perfectly in the middle */
   }
 
   .logo a {
-      font-size: 24px; /* Adjust the font size of the text */
-      color: #511400; /* You can customize the color here */
+      font-size: 28px; /* Adjust the font size of the text */
+      color: #511400; /* Text color */
       text-decoration: none;
       font-weight: bold;
+      display: flex;
+      align-items: center; /* Align text vertically with logo */
   }
-  
+
   .navbar {
     display: flex;
     justify-content: space-between;
