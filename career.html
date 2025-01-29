@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* CAREER CSS SECTION */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        header {
+            background-color: #511400;
+            color: #ffc43d;
+            padding: 2rem 0;
+            text-align: center;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        header:hover {
+            background-color: #b55a00; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        }
+
+        
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .animated-text {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(90deg,  #b82e00, #ff5722, #b55a00, #ffc43d, #eee5e9);
+            background-size: 300%;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 3s infinite linear;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box h2 {
+            margin-top: 0;
+            color: black;
+        }
+
+        .job-header {
+            background-color: #b55a00;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: left;
+        }
+
+        .job-header:hover {
+            background-color: #511400;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-content {
+            display: none;
+            padding: 1rem;
+            background-color: #fafafa;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        input, textarea, select, button {
+            margin-top: 0.5rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: orangered;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #511400;
+        }
+
+        a {
+            text-decoration: none;
+            color: maroon;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* CAREER CSS SECTION */
+    </style>
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" tabindex="1" accesskey="a">
+                <img src="image/logo.png" alt="Logo" class="logo-image"> Ink N Link Press
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+            <a href="#" tabindex="2" accesskey="b"><b>About Us</b>
+                <div class="dropdown">
+                    <a href="background.html" tabindex="3" accesskey="c">Background</a>
+                    <a href="vision&mission.html" tabindex="4" accesskey="d">Vision & Mission</a>
+                    <a href="motto_and_objectives.html" tabindex="5" accesskey="e">Motto & Objectives</a>
+                    <a href="chart.html" tabindex="6" accesskey="f">Organizational Chart</a>
+                    <a href="location.html" tabindex="7" accesskey="g">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" tabindex="8" accesskey="h"><b>Services</b></a>
+            </li>
+            <li>
+            <a href="#" tabindex="9" accesskey="i"><b>Products</b></a>
+                <div class="dropdown">
+                    <a href="products.html" tabindex="10" accesskey="j">Our Collection</a>
+                    <a href="genre.html" tabindex="11" accesskey="k">Genre</a>
+                    <a href="author.html" tabindex="12" accesskey="l">Featured Authors</a>
+                </div>
+            </li>
+            <li>
+                <a href="career.html" tabindex="13" accesskey="m"><b>Career</b></a>
+            </li>
+            <li>
+                <a href="FAQ.html" tabindex="14" accesskey="n"><b>FAQ</b></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <header>
+        <h1>Join Our Team</h1>
+        <p class="animated-text">Explore career opportunities and apply today!</p>
+    </header>
+
+    <main>
+        <!-- VACANCIES SECTION  -->
+        <div class="box">
+            <h2>Vacancies Available</h2>
+
+            <div class="job-header">+ Book Editor</div>
+            <div class="job-content">
+                <strong>Key Responsibilities:</strong>
+                <ul>
+                    <li>Collaborate with authors to develop and refine manuscripts.</li>
+                    <li>Perform content editing, copy editing, and proofreading.</li>
+                    <li>Manage multiple projects and deadlines effectively.</li>
+                </ul>
+            </div>
+
+            <div class="job-header">+ Content Writer</div> 
+            <div class="job-content">
+                <strong>Key Responsibilities:</strong>
+                <ul>
+                    <li>Develop engaging content for books, articles, and promotional materials.</li>
+                    <li>Collaborate with editors and marketing teams.</li>
+                    <li>Ensure content aligns with company objectives.</li>
+                </ul>
+            </div>
+
+            <div class="job-header">+ Marketing Specialist</div>
+            <div class="job-content">
+                <strong>Key Responsibilities:</strong>
+                <ul>
+                    <li>Develop and implement marketing strategies.</li>
+                    <li>Manage social media campaigns.</li>
+                    <li>Collaborate with sales and editorial teams.</li>
+                </ul>
+            </div>
+
+            <div class="job-header">+ Graphic Designer</div>
+            <div class="job-content">
+                <strong>Key Responsibilities:</strong>
+                <ul>
+                    <li>Design book covers and promotional materials.</li>
+                    <li>Collaborate with authors and editors creatively.</li>
+                </ul>
+            </div>
+
+            <div class="job-header">+ Copy Editor</div>
+            <div class="job-content">
+                <strong>Key Responsibilities:</strong>
+                <ul>
+                    <li>Review and edit manuscripts for grammar and style.</li>
+                    <li>Maintain house style guides.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- APPLICATION FORM SECTION -->
+        <div class="box">
+            <h2>Apply Now</h2>
+            <a href="pdf/Application Form.pdf" target="_blank" download>Download Application Form Here</a>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8a9c7b73-7971-4b70-944a-1e31873ab32a">
+
+                <label for="name">Full Name </label> 
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="position">Position</label>
+                <select id="position" name="position" required>
+                    <option value="" selected disabled>Select your position</option>
+                    <option value="Book Editor">Book Editor</option>
+                    <option value="Content Writer">Content Writer</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Copy Editor">Copy Editor</option>
+                </select>
+
+                <label for="message">Why Should We Hire You?</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself" required></textarea>
+
+                <label for="resume">Attach Resume & Application Form</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                
+                <button type="submit">Submit Application</button>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                
+                </form>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.job-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+    <!-- FOOTER SECTION -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <footer>
+     <div class="footer-container">
+         <div class="footer-section">
+             <h3>Contact Us</h3>
+             <p>Email: inknlinkpress@gmail.com</p>
+             <p>Phone: 012 456 7890</p>
+         </div>
+         <div class="footer-section">
+             <h3>Location</h3>
+             <p>Taman Perindustrian Bukit</p> 
+             <p>Raja Selatan, 40000</p>
+             <p>Shah Alam</p>
+         </div>
+         <div class="footer-section">
+             <h3>Business Hours</h3>
+             <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+             <p>Sat: 10:00 AM - 4:00 PM</p>
+             <p>Sun: Closed</p>
+         </div>
+         <div class="footer-section">
+             <h3>Quick Links</h3>
+             <div class="footer-links">
+             <p><a href="background.html">About Us</a></p>
+             <p><a href="location.html">Contact Us</a></p>
+             <p><a href="FAQ.html">FAQ</a></p>
+             <p><a href="career.html">Career</a></p>
+             </div>
+         </div>
+         <div class="footer-section social-icons">
+             <h3>Follow Us</h3>
+             <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+             <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+             <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+         </div>
+     </div>
+     <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
+     <p><a href="#top" style="text-decoration: none; color: white; margin: 0 10px;">Back to Top</a></p>
+ </footer>
+
+</body>
+</html>

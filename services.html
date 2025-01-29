@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #511400;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header:hover {
+            background-color: #b55a00;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 45px;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .service-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border: 5px solid #000000;
+            background-color: #f5e7ca;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-box-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0 10px 0;
+        }
+
+        .service-box-description {
+            font-size: 14px;
+            color: #000000;
+            min-height: 70px;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        form {
+            background-color: #fff;
+            width: 50%;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: #511400;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #ff5722;
+            outline: none;
+        }
+
+        /* Required field styling */
+        span {
+            color: red;
+        }
+
+        /* Checkbox */
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-label {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff3d00;
+        }
+
+        /* Other genre input field */
+        #otherGenreInput {
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            form {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" tabindex="1" accesskey="a">
+                <img src="image/logo.png" alt="Logo" class="logo-image"> Ink N Link Press
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+            <a href="#" tabindex="2" accesskey="b"><b>About Us</b>
+                <div class="dropdown">
+                    <a href="background.html" tabindex="3" accesskey="c">Background</a>
+                    <a href="vision&mission.html" tabindex="4" accesskey="d">Vision & Mission</a>
+                    <a href="motto_and_objectives.html" tabindex="5" accesskey="e">Motto & Objectives</a>
+                    <a href="chart.html" tabindex="6" accesskey="f">Organizational Chart</a>
+                    <a href="location.html" tabindex="7" accesskey="g">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" tabindex="8" accesskey="h"><b>Services</b></a>
+            </li>
+            <li>
+            <a href="#" tabindex="9" accesskey="i"><b>Products</b></a>
+                <div class="dropdown">
+                    <a href="products.html" tabindex="10" accesskey="j">Our Collection</a>
+                    <a href="genre.html" tabindex="11" accesskey="k">Genre</a>
+                    <a href="author.html" tabindex="12" accesskey="l">Featured Authors</a>
+                </div>
+            </li>
+            <li>
+                <a href="career.html" tabindex="13" accesskey="m"><b>Career</b></a>
+            </li>
+            <li>
+                <a href="FAQ.html" tabindex="14" accesskey="n"><b>FAQ</b></a>
+            </li>
+        </ul>
+    </div>
+
+    <header>Our Services</header>
+
+    <div class="services-container">
+        <div class="service-box">
+            <img src="image/manuscript_evaluation.jpg" alt="Service 1">
+            <div class="service-box-title">Manuscript Evaluation</div>
+            <div class="service-box-description">After we receive the work, we analyse it carefully and provide
+                any changes that are required based on the content, for example, initial reading and improvement recommendations.
+            </div>
+        </div>
+        <div class="service-box">
+            <img src="image/proofreading.jpg" alt="Service 2">
+            <div class="service-box-title">Editing and Proofreading</div>
+            <div class="service-box-description">We will examine its content to ensure there is no error in it. 
+                The content is from language, word count, and fiction or non-fiction manuscripts.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/Design.jpg" alt="Service 3">
+            <div class="service-box-title">Design</div>
+            <div class="service-box-description">Our company will consider our client's preferences regarding colours, typography, and additional objects or elements in this section.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/printing.jpg" alt="Service 4">
+            <div class="service-box-title">Printing</div>
+            <div class="service-box-description">Our company offers several kinds of options in the form of books for printing services.
+                 Make in factors like the book's size, the printing style, the cover page, the size of the paper, the colours, the binding, and laminating process.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/distribution.jpg" alt="Service 5">
+            <div class="service-box-title">Distribution</div>
+            <div class="service-box-description">We additionally offer our clients a book distribution service. The clients can choose online or physical distribution.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/marketing-promotion.jpg" alt="Service 6">
+            <div class="service-box-title">Marketing and Promotion</div>
+            <div class="service-box-description">Our company also offers marketing and promotion services, such as promoting our clients' books through social media, and book launch events.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/ebook.jpg" alt="Service 7">
+            <div class="service-box-title">E-book Conversion</div>
+            <div class="service-box-description">Our company also provides e-book conversion services.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/ISBN-Registration.jpg" alt="Service 8">
+            <div class="service-box-title">ISBN and Copyright Registration</div>
+            <div class="service-box-description">This service is offered to clients because it can help safeguard and manage literary works in the marketplace, providing recognition and protection for authors.</div>
+        </div>
+        <div class="service-box">
+            <img src="image/consulting.jpg" alt="Service 9">
+            <div class="service-box-title">Consultation Service</div>
+            <div class="service-box-description">For our clients, we are also providing consultation services. The service is subject-based and charged at an hourly rate.</div>
+        </div>
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+        <h2>Send Your Manuscript</h2>
+        
+        <input type="hidden" name="access_key" value="8a9c7b73-7971-4b70-944a-1e31873ab32a">
+
+        <label for="name">Name <span style="color: red;">*</span></label>
+        <input type="text" name="name" placeholder="Name" required>
+
+        <label for="email">Email <span style="color: red;">*</span></label>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <label for="phone">Phone Number <span style="color: red;">*</span></label>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <label for="title">Manuscript Title <span style="color: red;">*</span></label>
+        <input type="text" name="title" placeholder="Manuscript Title" required>
+
+        <label for="genre">Genre <span style="color: red;">*</span></label>
+        <select name="genre" id="genre" onchange="toggleOtherGenreInput(this)" required>
+            <option value="" disabled selected>Select Genre</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="romance">Romance</option>
+            <option value="slice of life">Slice Of Life</option>
+            <option value="thriller">Thriller</option>
+            <option value="historical fiction">Historical Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="horror">Horror</option>
+            <option value="other">Other</option>
+        </select>
+
+        <input type="text" name="other_genre" id="otherGenreInput" placeholder="Please specify your genre" style="display: none;">
+
+        <label for="synopsis">Synopsis <span style="color: red;">*</span></label>
+        <textarea name="synopsis" placeholder="Synopsis" rows="5" required></textarea>
+
+        <label for="manuscript">Manuscript (PDF) <span style="color: red;">*</span></label>
+        <input type="file" id="manuscript" accept=".pdf,.doc,.docx" required>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="confirm" name="confirm">
+            <label class="checkbox-label" for="confirm">
+                I confirm that this is my original work and that I have the rights to submit it for consideration. 
+                <span style="color: red;">*</span>
+            </label>
+        </div>
+        
+
+        <button type="submit">Submit</button>
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    </form>
+
+    <br>
+
+    <script>
+        function toggleOtherGenreInput(selectElement) {
+            const otherGenreInput = document.getElementById('otherGenreInput');
+            if (selectElement.value === 'other') {
+                otherGenreInput.style.display = 'block';
+                otherGenreInput.setAttribute('required', 'true');
+            } else {
+                otherGenreInput.style.display = 'none';
+                otherGenreInput.removeAttribute('required');
+            }
+        }
+    </script>
+
+    <!-- FOOTER SECTION -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <footer>
+     <div class="footer-container">
+         <div class="footer-section">
+             <h3>Contact Us</h3>
+             <p>Email: inknlinkpress@gmail.com</p>
+             <p>Phone: 012 456 7890</p>
+         </div>
+         <div class="footer-section">
+             <h3>Location</h3>
+             <p>Taman Perindustrian Bukit</p> 
+             <p>Raja Selatan, 40000</p>
+             <p>Shah Alam</p>
+         </div>
+         <div class="footer-section">
+             <h3>Business Hours</h3>
+             <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+             <p>Sat: 10:00 AM - 4:00 PM</p>
+             <p>Sun: Closed</p>
+         </div>
+         <div class="footer-section">
+             <h3>Quick Links</h3>
+             <div class="footer-links">
+             <p><a href="background.html">About Us</a></p>
+             <p><a href="location.html">Contact Us</a></p>
+             <p><a href="FAQ.html">FAQ</a></p>
+             <p><a href="career.html">Career</a></p>
+             </div>
+         </div>
+         <div class="footer-section social-icons">
+             <h3>Follow Us</h3>
+             <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+             <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+             <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+         </div>
+     </div>
+     <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
+     <p><a href="#top" style="text-decoration: none; color: white; margin: 0 10px;">Back to Top</a></p>
+ </footer>
+
+</body>
+</html>

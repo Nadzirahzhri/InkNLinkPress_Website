@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Authors</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #511400; 
+            color: white; 
+            text-align: center; 
+            padding: 20px 0; 
+            font-size: 2rem; 
+            font-weight: bold;  
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        header:hover {
+            background-color: #b55a00; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        }
+        
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 350px;
+            border: 3px solid #270e00;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #f5e2d1;
+            box-shadow: 0 6px 12px rgba(216, 181, 117, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h3 {
+            font-size: 24px;
+            color: #b55a00;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #2e1609;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .content a:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" tabindex="1" accesskey="a">
+                <img src="image/logo.png" alt="Logo" class="logo-image"> Ink N Link Press
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+            <a href="#" tabindex="2" accesskey="b"><b>About Us</b>
+                <div class="dropdown">
+                    <a href="background.html" tabindex="3" accesskey="c">Background</a>
+                    <a href="vision&mission.html" tabindex="4" accesskey="d">Vision & Mission</a>
+                    <a href="motto_and_objectives.html" tabindex="5" accesskey="e">Motto & Objectives</a>
+                    <a href="chart.html" tabindex="6" accesskey="f">Organizational Chart</a>
+                    <a href="location.html" tabindex="7" accesskey="g">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" tabindex="8" accesskey="h"><b>Services</b></a>
+            </li>
+            <li>
+            <a href="#" tabindex="9" accesskey="i"><b>Products</b></a>
+                <div class="dropdown">
+                    <a href="products.html" tabindex="10" accesskey="j">Our Collection</a>
+                    <a href="genre.html" tabindex="11" accesskey="k">Genre</a>
+                    <a href="author.html" tabindex="12" accesskey="l">Featured Authors</a>
+                </div>
+            </li>
+            <li>
+                <a href="career.html" tabindex="13" accesskey="m"><b>Career</b></a>
+            </li>
+            <li>
+                <a href="FAQ.html" tabindex="14" accesskey="n"><b>FAQ</b></a>
+            </li>
+        </ul>
+    </div>
+
+
+<header>Featured Authors</header>
+
+<main>
+    <div class="card-container">
+        <div class="card">
+            <a href="teme_abdullah.html"><img src="image/teme abdullah.jpg" alt="Teme Abdullah"></a>
+            <div class="content">
+                <h3>Teme Abdullah</h3>
+                <p>A well-known Malaysian author famous for inspiring young readers with his storytelling.</p>
+                <a href="teme_abdullah.html">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="nadia_khan.html"><img src="image/nadia khan.jpg" alt="Nadia Khan"></a>
+            <div class="content">
+                <h3>Nadia Khan</h3>
+                <p>Known for her contemporary and thought-provoking novels that captivate young minds.</p>
+                <a href="nadia_khan.html">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="tash_aw.html"><img src="image/tash aw.jpg" alt="Tash Aw"></a>
+            <div class="content">
+                <h3>Tash Aw</h3>
+                <p>An award-winning Malaysian author whose works have gained international recognition.</p>
+                <a href="tash_aw.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER SECTION -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: inknlinkpress@gmail.com</p>
+            <p>Phone: 012 456 7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Location</h3>
+            <p>Taman Perindustrian Bukit</p> 
+            <p>Raja Selatan, 40000</p>
+            <p>Shah Alam</p>
+        </div>
+        <div class="footer-section">
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+            <p>Sat: 10:00 AM - 4:00 PM</p>
+            <p>Sun: Closed</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+            <p><a href="background.html">About Us</a></p>
+            <p><a href="location.html">Contact Us</a></p>
+            <p><a href="FAQ.html">FAQ</a></p>
+            <p><a href="career.html">Career</a></p>
+            </div>
+        </div>
+        <div class="footer-section social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </div>
+    <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
+    <p><a href="#top" style="text-decoration: none; color: white; margin: 0 10px;">Back to Top</a></p>
+</footer>
+
+</body>
+</html>
