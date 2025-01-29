@@ -4,6 +4,24 @@ body {
     font-family: Arial, sans-serif;
     background-color: #b55a00;
   }
+
+  .logo {
+      display: flex;
+      align-items: center; /* Vertically center the logo with the text */
+  }
+
+  .logo img {
+      width: 50px; /* Adjust the size of the logo */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Space between logo and text */
+  }
+
+  .logo a {
+      font-size: 24px; /* Adjust the font size of the text */
+      color: #511400; /* You can customize the color here */
+      text-decoration: none;
+      font-weight: bold;
+  }
   
   .navbar {
     display: flex;
