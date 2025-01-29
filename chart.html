@@ -13,88 +13,68 @@
           padding: 0;
           color: #ffffff;
         }
+
+        header {
+            background-color: #511400; 
+            color: white; 
+            text-align: center; 
+            padding: 20px 0; 
+            font-size: 2rem; 
+            font-weight: bold; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        header:hover {
+            background-color: #b55a00; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        }
+
     </style>
 
-<!-- NAVIGATION BAR SECTION -->
-<div class="navbar">
-    <div class="logo">Ink N Link Press</div>
-    <ul class="menu">
-        <li>
-            <a href="#"><b>About Us</b></a>
-            <div class="dropdown">
-                <a href="#">Mission</a>
-                <a href="#">Vision</a>
-                <a href="#">Objectives</a>
-                <a href="#">Motto</a>
-                <a href="#">Organizational Chart</a>
-                <a href="#">Location</a>
-            </div>
-        </li>
-        <li>
-            <a href="#"><b>Services</b></a>
-            <div class="dropdown">
-                <a href="#">Our Team</a>
-                <a href="#">Our Mission</a>
-                <a href="#">Careers</a>
-            </div>
-        </li>
-        <li>
-            <a href="#"><b>Products</b></a>
-            <div class="dropdown">
-                <a href="#">All Products</a>
-                <a href="#">New Releases</a>
-                <a href="#">Genre</a>
-                <a href="#">Author</a>
-            </div>
-        </li>
-        <li>
-            <a href="#"><b>Career</b></a>
-            <div class="dropdown">
-                <a href="#">Web Design</a>
-                <a href="#">SEO</a>
-                <a href="#">Marketing</a>
-            </div>
-        </li>
-        <li>
-            <a href="#"><b>Frequently Questions</b></a>
-            <div class="dropdown">
-                <a href="#">Email</a>
-                <a href="#">Phone</a>
-                <a href="#">Location</a>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<!-- MARQUEE SECTION -->
-<div class="marquee">
-    <p>Welcome To Ink N Link Press Website</p>
-  </div>
-  
-<!-- SEARCH AND LOGIN SECTION -->
 <body>
-    <header>
-      <div class="nav-right">
-        <form action="#" method="get" class="search-bar">
-          <input type="text" placeholder="Search..." name="search">
-          <button type="submit">Search</button>
-        </form>
-        <div class="login">
-          <a href="#">Login</a>
-        </div>
-        <div class="cart">
-          <a href="#">
-            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png" alt="Cart">
-          </a>
-        </div>
-      </div>
-    </header>
 
-    <br>
-
-        <div align="center">
-        <h1>Organizational Chart</h1>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" tabindex="1" accesskey="a">
+                <img src="image/logo.png" alt="Logo" class="logo-image"> Ink N Link Press
+            </a>
         </div>
+        <ul class="menu">
+            <li>
+            <a href="#" tabindex="2" accesskey="b"><b>About Us</b>
+                <div class="dropdown">
+                    <a href="background.html" tabindex="3" accesskey="c">Background</a>
+                    <a href="vision&mission.html" tabindex="4" accesskey="d">Vision & Mission</a>
+                    <a href="motto_and_objectives.html" tabindex="5" accesskey="e">Motto & Objectives</a>
+                    <a href="chart.html" tabindex="6" accesskey="f">Organizational Chart</a>
+                    <a href="location.html" tabindex="7" accesskey="g">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" tabindex="8" accesskey="h"><b>Services</b></a>
+            </li>
+            <li>
+            <a hfef="#" tabindex="9" accesskey="i"><b>Products</b></a>
+                <div class="dropdown">
+                    <a href="products.html" tabindex="10" accesskey="j">Our Collection</a>
+                    <a href="genre.html" tabindex="11" accesskey="k">Genre</a>
+                    <a href="author.html" tabindex="12" accesskey="l">Featured Authors</a>
+                </div>
+            </li>
+            <li>
+                <a href="career.html" tabindex="13" accesskey="m"><b>Career</b></a>
+            </li>
+            <li>
+                <a href="FAQ.html" tabindex="14" accesskey="n"><b>FAQ</b></a>
+            </li>
+        </ul>
+    </div>
+
+    <header>Organizational Chart</header>
+
+
          <!--Image Mapping--> 
 
     <div align="center"> 
@@ -118,37 +98,46 @@
 
     <br clear="all">    
 
- <!-- FOOTER SECTION -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <footer>
-     <div class="footer-container">
-         <div class="footer-section">
-             <h3>Contact Us</h3>
-             <p>Email: inknlinkpress@gmail.com</p>
-             <p>Phone: 012 456 7890</p>
-         </div>
-         <div class="footer-section">
-             <h3>Location</h3>
-             <p>Taman Perindustrian Bukit 
-                Raja <br> Selatan, 40000
-                Shah Alam
-             </p>
-         </div>
-         <div class="footer-section">
-             <h3>Business Hours</h3>
-             <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-             <p>Sat: 10:00 AM - 4:00 PM</p>
-             <p>Sun: Closed</p>
-         </div>
-         <div class="footer-section social-icons">
-             <h3>Follow Us</h3>
-             <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-             <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
-             <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-         </div>
-     </div>
-     
-     <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
- </footer>
+<!-- FOOTER SECTION -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: inknlinkpress@gmail.com</p>
+            <p>Phone: 012 456 7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Location</h3>
+            <p>Taman Perindustrian Bukit</p> 
+            <p>Raja Selatan, 40000</p>
+            <p>Shah Alam</p>
+        </div>
+        <div class="footer-section">
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+            <p>Sat: 10:00 AM - 4:00 PM</p>
+            <p>Sun: Closed</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+            <p><a href="background.html">About Us</a></p>
+            <p><a href="location.html">Contact Us</a></p>
+            <p><a href="FAQ.html">FAQ</a></p>
+            <p><a href="career.html">Career</a></p>
+            </div>
+        </div>
+        <div class="footer-section social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </div>
+    <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
+    <p><a href="#top" style="text-decoration: none; color: white; margin: 0 10px;">Back to Top</a></p>
+</footer>
+
     </body>
 </html>
