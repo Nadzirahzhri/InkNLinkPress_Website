@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres - Ink N Link Press</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #511400; 
+            color: white; 
+            text-align: center; 
+            padding: 20px 0; 
+            font-size: 2rem; 
+            font-weight: bold; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        header:hover {
+            background-color: #b55a00; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .genre-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+    
+        .genre {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .genre:hover {
+            transform: translateY(-10px);
+        }
+
+        
+        .genre h2 {
+            color: #b55a00;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        
+        .genre p {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #511400;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        
+        .genre-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .genre-links a {
+            text-decoration: none;
+            color: #511400;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 0 15px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .genre-links a:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .genre-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #b55a00;
+            transition: width 0.3s ease;
+        }
+
+        .genre-links a:hover::after {
+            width: 100%;
+        }
+
+    
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+    
+        .book {
+            width: 250px;
+            background: #fff;
+            border: 2px solid #eaeaea;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        
+        .book img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        
+        .book h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        
+        .book a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background-color: #b55a00;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .book a:hover {
+            background-color: #f0d49f;
+            transform: translateY(-4px);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" tabindex="1" accesskey="a">
+                <img src="image/logo.png" alt="Logo" class="logo-image"> Ink N Link Press
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+            <a href="#" tabindex="2" accesskey="b"><b>About Us</b>
+                <div class="dropdown">
+                    <a href="background.html" tabindex="3" accesskey="c">Background</a>
+                    <a href="vision&mission.html" tabindex="4" accesskey="d">Vision & Mission</a>
+                    <a href="motto_and_objectives.html" tabindex="5" accesskey="e">Motto & Objectives</a>
+                    <a href="chart.html" tabindex="6" accesskey="f">Organizational Chart</a>
+                    <a href="location.html" tabindex="7" accesskey="g">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="services.html" tabindex="8" accesskey="h"><b>Services</b></a>
+            </li>
+            <li>
+            <a href="#" tabindex="9" accesskey="i"><b>Products</b></a>
+                <div class="dropdown">
+                    <a href="products.html" tabindex="10" accesskey="j">Our Collection</a>
+                    <a href="genre.html" tabindex="11" accesskey="k">Genre</a>
+                    <a href="author.html" tabindex="12" accesskey="l">Featured Authors</a>
+                </div>
+            </li>
+            <li>
+                <a href="career.html" tabindex="13" accesskey="m"><b>Career</b></a>
+            </li>
+            <li>
+                <a href="FAQ.html" tabindex="14" accesskey="n"><b>FAQ</b></a>
+            </li>
+        </ul>
+    </div>
+
+    <header>Explore Our Book Genres</header>
+
+    <!-- Genre Links -->
+    <div class="genre-links">
+        <a href="#slice-of-life">Slice of Life</a>
+        <a href="#historical-fiction">Historical Fiction</a>
+        <a href="#fantasy">Fantasy</a>
+        <a href="#romance">Romance</a>
+        <a href="#horror">Horror</a>
+        <a href="#thriller">Thriller</a>
+    </div>
+
+<div class="genre-container">
+    <div class="genre" id="slice-of-life">
+        <h2>Slice Of Life</h2>
+        <p>Explore everyday moments and ordinary lives, focusing on personal growth, relationships, and the beauty in life's small details.</p>
+        <div class="book-list">
+            <div class="book">
+                <a href="products.html#rentong">
+                    <img src="image/SHAHNON AHMAD - RENTONG - SLICE OF LIFE.jpg" alt="Rentong">
+                    <h3>Rentong</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#arkitek">
+                    <img src="image/TEME ABDULLAH - ARKITEK JALANAN - SLICE OF LIFE.jpg" alt="Arkitek Jalanan">
+                    <h3>Arkitek Jalanan</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#impian">
+                    <img src="image/TEME ABDULLAH - IMPIAN JALANAN - SLICE OF LIFE.jpg" alt="Impian Jalanan">
+                    <h3>Impian Jalanan</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#pelukis">
+                    <img src="image/TEME ABDULLAH - PELUKIS JALANAN - SLICE OF LIFE.jpg" alt="Pelukis Jalanan">
+                    <h3>Pelukis Jalanan</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#signature">
+                    <img src="image/TEME ABDULLAH - SIGNATURE JALANAN - SLICE OF LIFE.jpg" alt="Signature Jalanan">
+                    <h3>Signature Jalanan</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre" id="historical-fiction">
+        <h2>Historical Fiction</h2>
+        <p>Immerse yourself in stories set against the backdrop of real historical events, where fictional characters interact with the past, bringing history to life.</p>
+        <div class="book-list">
+            <div class="book">
+                <a href="products.html#1515">
+                    <img src="image/FAISAL TEHRANI - 1515 - HISTORICAL FICTION.jpg" alt="1515">
+                    <h3>1515</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#daughter">
+                    <img src="image/SUE LYNN TAN - DAUGHTER OF THE MOON GODDESS - HISTORICAL FICTION.jpeg" alt="Daughter of the Moon Goddess">
+                    <h3>Daughter of the Moon Goddess</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#doors">
+                    <img src="image/TAN TWAN ENG - THE HOUSE OF DOORS - HISTORICAL FICTION.jpeg" alt="The House of Doors">
+                    <h3>The House of Doors</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#silk">
+                    <img src="image/TASH AW - THE HARMONY SILK FACTORY - HISTORICAL FICTION.jpeg" alt="The Harmony Silk Factory">
+                    <h3>The Harmony Silk Factory</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre" id="fantasy">
+        <h2>Fantasy</h2>
+        <p>Enter magical worlds filled with mythical creatures, epic adventures, and limitless possibilities, where imagination knows no bounds.</p>
+        <div class="book-list">
+            <div class="book">
+                <a href="products.html#entiti">
+                    <img src="image/SYAFIQ AIZAT - ENTITI - FANTASY.jpg" alt="Entiti">
+                    <h3>Entiti</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#bayang">
+                    <img src="image/TEME ABDULLAH -BAYANG SOFEA - FANTASY.jpg" alt="Bayang Sofea">
+                    <h3>Bayang Sofea</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#revenge">
+                    <img src="image/NADIAH ZAKARIA - REVENGE IN VIOLENT HUES - FANTASY.jpg" alt="Revenge in Violent Hues">
+                    <h3>Revenge in Violent Hues</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre" id="romance">
+        <h2>Romance</h2>
+        <p>Experience heartwarming tales of love, passion, and relationships, capturing the complexities of romance in various settings and cultures.</p>
+        <div class="book-list">
+            <div class="book">
+                <a href="products.html#gemersik">
+                    <img src="image/ANIS AYUNI - GEMERSIK KALBU - ROMANCE.jpg" alt="Gemersik Kalbu">
+                    <h3>Gemersik Kalbu</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#tunas">
+                    <img src="image/HLOVATE -TUNAS - ROMANCE.jpg" alt="Tunas">
+                    <h3>Tunas</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#kelabu">
+                    <img src="image/NADIA KHAN - KELABU - ROMANCE.jpg" alt="Kelabu">
+                    <h3>Kelabu</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#nikina">
+                    <img src="image/NADIA KHAN - NIKINA - ROMANCE.jpg" alt="Nikina">
+                    <h3>Nikina</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#may">
+                    <img src="image/ROZANNA - MAY TERPASUNG DI LORONG WAKTU - ROMANCE.jpg" alt="May - Terpasung di Lorong Waktu">
+                    <h3>May- Terpasung di Lorong Waktu</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre" id="horror">
+        <h2>Horror</h2>
+        <p>Delve into the world of fear, suspense, and the supernatural, where terrifying creatures and psychological thrills keep you on the edge of your seat.</p>
+        <div class="book-list">
+            <div class="book">
+                <a href="products.html#kacau">
+                    <img src="image/ARIFF ADLY - KACAU - HORROR.jpg" alt="Kacau">
+                    <h3>Kacau</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#mereka">
+                    <img src="image/ARIFF ADLY - MEREKA - HORROR.jpg" alt="Mereka">
+                    <h3>Mereka</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#unbox">
+                    <img src="image/ARIFF ADLY - UNBOX - HORROR.jpg" alt="Unbox">
+                    <h3>Unbox</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#gantung">
+                    <img src="image/NADIA KHAN - GANTUNG - HORROR.jpg" alt="Gantung">
+                    <h3>Gantung</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#mental">
+                    <img src="image/SYAZ JOHAR - MENTAL - HORROR.jpg" alt="Mental">
+                    <h3>Mental</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#kad">
+                    <img src="image/ZUNALLY - KAD - HORROR.jpg" alt="Kad">
+                    <h3>Kad</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="genre" id="thriller">
+        <h2>Thriller</h2>
+        <p>Uncover high-stakes mysteries, intense action, and fast-paced plots that keep you guessing until the very end.</p>
+        <div class="book-list">
+            <div class="book">
+                <a href="products.html#koyak">
+                    <img src="image/AINI BAKAR - KOYAK - THRILLER.jpg" alt="Koyak">
+                    <h3>Koyak</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#gelap">
+                    <img src="image/ARIFF ADLY - GELAP - THRILLER.jpg" alt="Gelap">
+                    <h3>Gelap</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#pemutus">
+                    <img src="image/ARIFFUL BAQI - PEMUTUS NYAWA - THRILLER.jpg" alt="Pemutus Nyawa">
+                    <h3>Pemutus Nyawa</h3>
+                </a>
+            </div>
+            <div class="book">
+                <a href="products.html#manipulasi">
+                    <img src="image/ZARINI MANSOR - MANIPULASI - THRILLER.jpg" alt="Manipulasi">
+                    <h3>Manipulasi</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: inknlinkpress@gmail.com</p>
+            <p>Phone: 012 456 7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Location</h3>
+            <p>Taman Perindustrian Bukit</p> 
+            <p>Raja Selatan, 40000</p>
+            <p>Shah Alam</p>
+        </div>
+        <div class="footer-section">
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+            <p>Sat: 10:00 AM - 4:00 PM</p>
+            <p>Sun: Closed</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+            <p><a href="background.html">About Us</a></p>
+            <p><a href="location.html">Contact Us</a></p>
+            <p><a href="FAQ.html">FAQ</a></p>
+            <p><a href="career.html">Career</a></p>
+            </div>
+        </div>
+        <div class="footer-section social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </div>
+    <p>&copy; 2025 Ink N Link Press. All rights reserved.</p>
+    <p><a href="#top" style="text-decoration: none; color: white; margin: 0 10px;">Back to Top</a></p>
+</footer>
+
+</body>
+</html>
